@@ -1,0 +1,19 @@
+package com.mediqai.ai.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ChatResponse {
+
+    private Long conversationId;
+
+    private String message;
+
+    private AiAnalysisResponse analysis;
+}

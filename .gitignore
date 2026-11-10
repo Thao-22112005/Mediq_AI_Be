@@ -1,0 +1,122 @@
+# ==============================================================================
+# MEDIQ - GITIGNORE CONFIGURATION
+# ==============================================================================
+
+# ---------- Maven & Build Artifacts ----------
+target/
+**/target/
+build/
+**/build/
+out/
+**/out/
+*.class
+**/*.class
+*.war
+*.ear
+*.nar
+*.jar
+!.mvn/wrapper/*.jar
+
+# Maven release & backup files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# ---------- Node & Dependencies ----------
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- IDEs & Editors ----------
+# IntelliJ IDEA
+.idea/
+**/.idea/
+*.iml
+**/*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+**/.vscode/
+
+# Eclipse
+.settings/
+**/.settings/
+.project
+**/.project
+.classpath
+**/.classpath
+.factorypath
+**/.factorypath
+
+# NetBeans & Others
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# ---------- AI Assistants & Local Tooling ----------
+.claude/
+.agents/
+.gemini/
+docs/ai/
+
+# ---------- Documents & Office Files ----------
+docs/
+doc/
+*.doc
+*.docx
+*.docm
+*.dotx
+*.odt
+*.rtf
+~$*
+~$*.doc*
+~$*.docx
+
+# ---------- Environment Variables & Secrets ----------
+.env
+.env.*
+.env.local
+.env.*.local
+*.env
+*.env.*
+!.env.example
+!*.env.example
+*.pem
+*.key
+*.p12
+
+# ---------- Logs & Diagnostics ----------
+*.log
+**/*.log
+logs/
+**/logs/
+hs_err_pid*
+replay_pid*
+
+# ---------- Embedded Databases & Docker Data ----------
+*.h2.db
+*.trace.db
+mysql_data/
+**/mysql_data/
+docker-data/
+
+# ---------- Operating System Files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*.swp
+*~
+*.bak
+*.tmp
